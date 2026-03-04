@@ -1,9 +1,10 @@
-export default function Blog() {
-  return (
-    <main className="p-8">
-      <h1 className="text-3xl font-bold">Page Blog</h1>
+import type { Metadata } from "next";
 
-      <p className="mt-4">Ini page Blog</p>
-    </main>
-  );
+export const metadata: Metadata = {
+  title: "Blog – My Next.js App",
+  description: "Blog list and posts",
+};
+
+export default function BlogPage() {
+  return <h1>Blog</h1>;
 }
